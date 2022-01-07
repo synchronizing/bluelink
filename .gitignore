@@ -5,3 +5,9 @@
 # Python
 __pycache__
 *.egg-info
+build/
+dist/
+
+# PBR
+AUTHORS
+ChangeLog
