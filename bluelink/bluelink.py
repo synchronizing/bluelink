@@ -104,7 +104,7 @@ class Car:
             RequestFailed: If the request failed.
         """
         self._request(
-            "ignitionstart",
+            "postRemoteFatcStart",
             headers={
                 "airCtrl": "true",
                 "igniOnDuration": duration,
@@ -132,7 +132,7 @@ class Car:
         Raises:
             RequestFailed: If the request failed.
         """
-        self._request("ignitionstop")
+        self._request("postRemoteFatcStop")
         return True
 
     def find(self) -> tuple:
